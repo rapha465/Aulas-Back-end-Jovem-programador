@@ -1,0 +1,24 @@
+{
+  "name": "aulas-back-end-jovem-programador",
+  "version": "0.0.1",
+  "description": "Materiais da aula do Professor Renan",
+  "homepage": "https://github.com/rapha465/Aulas-Back-end-Jovem-programador#readme",
+  "bugs": {
+    "url": "https://github.com/rapha465/Aulas-Back-end-Jovem-programador/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapha465/Aulas-Back-end-Jovem-programador.git"
+  },
+  "license": "ISC",
+  "author": "Raphaella",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
