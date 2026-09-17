@@ -1,18 +1,13 @@
-import express from 'express' // TYPE MODULE
-// const express = require("express") // Type common js
+import express from 'express' 
+import router from './src/router/exercicio.js'
 
-// inicialzando o express - new
-const app =express()
+const app = express()
+app.use(express.json())
 
-app.get("/api/somar", (req, res) => {
-    // const exemplo ="batata"
-    // let exemploAlterar= 0 
-    // exemploAlterar= "batata"
-    const num1 = Number(req.query.num1)
-    const num2 = Number(req.query.num2)
-    res.send({message: num1 + num2 })
+app.use(router)
+
+app.listen(3000, () => {
+    console.log("Servidor rodando 3000")
 })
 
-app.listen(3000, () =>{
-    console.log("Servidor na porta 3000")
-})
+
